@@ -3,6 +3,7 @@
         "description": {
             "translate": "Adds additional curses."
         },
-        "pack_format": 48
+        "pack_format": 48,
+        "supported_formats": [48, 81]
     }
 }
