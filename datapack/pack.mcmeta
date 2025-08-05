@@ -1,0 +1,8 @@
+{
+    "pack": {
+        "description": {
+            "translate": "Adds additional curses."
+        },
+        "pack_format": 48
+    }
+}

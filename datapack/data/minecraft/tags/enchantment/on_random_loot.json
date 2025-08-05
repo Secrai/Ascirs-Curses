@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+	  "ascirs_curses:hallucinations_curse",
+    "ascirs_curses:vexing_curse",
+    "ascirs_curses:tripping_curse",
+    "ascirs_curses:side_stitches_curse"
+  ]
+}

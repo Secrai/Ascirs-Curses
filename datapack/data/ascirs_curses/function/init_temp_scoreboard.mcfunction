@@ -1,0 +1,1 @@
+scoreboard objectives add ascir.temp dummy

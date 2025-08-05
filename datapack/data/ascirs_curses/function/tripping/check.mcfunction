@@ -1,0 +1,1 @@
+execute if block ~ ~-1 ~ #minecraft:air if block ~ ~-2 ~ #minecraft:air run function ascirs_curses:tripping/fall

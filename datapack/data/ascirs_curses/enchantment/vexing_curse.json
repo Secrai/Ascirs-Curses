@@ -1,0 +1,138 @@
+{
+  "anvil_cost": 5,
+  "description": {
+    "translate": "enchantment.ascirs_curses.vexing_curse",
+    "fallback": "Curse of Vexing"
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 11,
+    "per_level_above_first": 11
+  },
+  "slots": [
+    "mainhand",
+    "armor"
+  ],
+  "supported_items": "#ascirs_curses:enchantable/weapons_and_equippables",
+  "weight": 1,
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:summon_entity",
+          "entity": "minecraft:vex"
+        },
+        "requirements": {
+          "condition": "minecraft:random_chance_with_enchanted_bonus",
+          "unenchanted_chance": 0,
+          "enchanted_chance": {
+            "type": "minecraft:linear",
+            "base": 0.02,
+            "per_level_above_first": 0.02
+          },
+          "enchantment": "ascirs_curses:vexing_curse"
+        }
+      },
+      {
+        "enchanted": "victim",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:summon_entity",
+          "entity": "minecraft:vex"
+        },
+        "requirements": {
+          "condition": "minecraft:any_of",
+          "terms": [
+            {
+              "condition": "minecraft:all_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "slots": {
+                      "armor.*": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "ascirs_curses:vexing_curse",
+                              "levels": 1
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.02
+                }
+              ]
+            },
+            {
+              "condition": "minecraft:all_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "slots": {
+                      "armor.*": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "ascirs_curses:vexing_curse",
+                              "levels": 2
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.04
+                }
+              ]
+            },
+            {
+              "condition": "minecraft:all_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "slots": {
+                      "armor.*": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "ascirs_curses:vexing_curse",
+                              "levels": 3
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.06
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
