@@ -1,6 +1,6 @@
 {
   "values": [
     "ascirs_curses:init_temp_scoreboard",
-		"ascirs_curses:hallucinations/init"
+    "ascirs_curses:hallucinations/init"
   ]
 }
