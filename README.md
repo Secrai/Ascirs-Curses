@@ -24,7 +24,7 @@ Maximum level: **3**.
 When hitting something using a weapon enchanted with this curse, or when being hit while wearing equipment that has this curse on it, there's a small chance a vex might spawn. This chance increases with the level of the enchantment, and is applied separately for each piece of equipment, meaning it increases when more than one piece of equipment has the curse on it.
 
 ## Curse of Side Stitches
-Supported items: **Helmets**.<br>
+Supported items: All **armor**.<br>
 Maximum level: **1**.
 
 You continuously take damage while sprinting. The damage is applied once for each armor piece with the curse.
